@@ -80,7 +80,7 @@ class _ChatState extends State<Chat> {
                                       animator();
                                       Timer(const Duration(milliseconds: 500),()
                                       {
-                                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SeeAll(),));
+                                        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SeeAll(),));
                                       });
                                     },
                                     child: const Icon(

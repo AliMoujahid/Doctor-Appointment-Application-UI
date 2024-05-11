@@ -8,6 +8,8 @@ import 'package:hospital/res/lists.dart';
 import 'Chat.dart';
 
 class SeeAll extends StatefulWidget {
+  const SeeAll({super.key});
+
   @override
   State<SeeAll> createState() => _SeeAllState();
 }
@@ -42,13 +44,13 @@ class _SeeAllState extends State<SeeAll> {
     return Scaffold(
       body: Container(
         color: Colors.white,
-        padding: EdgeInsets.only(top: 70),
+        padding: const EdgeInsets.only(top: 70),
         height: size.height,
         width: size.width,
         child: Stack(
           children: [
             AnimatedPositioned(
-              duration: Duration(milliseconds: 400),
+              duration: const Duration(milliseconds: 400),
               top: position ? 1 : 50,
               left: 20,
               right: 20,
@@ -58,17 +60,17 @@ class _SeeAllState extends State<SeeAll> {
                 top: position ? 60 : 120,
                 right: 20,
                 left: 20,
-                duration: Duration(milliseconds: 300),
+                duration: const Duration(milliseconds: 300),
                 child: findDoctor()),
             AnimatedPositioned(
                 top: position ? 390 : 450,
                 right: 20,
                 left: 20,
-                duration: Duration(milliseconds: 400),
+                duration: const Duration(milliseconds: 400),
                 child: AnimatedOpacity(
                   opacity: opacity,
-                  duration: Duration(milliseconds: 400),
-                  child: Container(
+                  duration: const Duration(milliseconds: 400),
+                  child: SizedBox(
                     width: size.width,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -95,11 +97,11 @@ class _SeeAllState extends State<SeeAll> {
                 top: position ? 430 : 500,
                 left: 20,
                 right: 20,
-                duration: Duration(milliseconds: 500),
+                duration: const Duration(milliseconds: 500),
                 child: AnimatedOpacity(
                     duration: const Duration(milliseconds: 500),
                     opacity: opacity,
-                    child: Container(
+                    child: SizedBox(
                       height: 350,
                       child: ListView.builder(
                         itemCount: 7,
