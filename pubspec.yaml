@@ -1,12 +1,26 @@
-workflows:
-  flutter_build:
-    name: Flutter Build
-    environment:
-      flutter: stable
+name: doctor_appointment_ui
+description: A Flutter UI for a doctor appointment application.
 
-    scripts:
-      - flutter pub get
-      - flutter build ios --release --no-codesign
+# You can specify the version of your package here.
+# version: 1.0.0
 
-    artifacts:
-      - build/ios/iphoneos/Runner.ipa
+# Dependencies allow you to use code from other packages in your Flutter app.
+dependencies:
+  flutter:
+    sdk: flutter
+  # Add any additional dependencies your project needs here.
+
+# Flutter plugins allow you to use native platform features in your Flutter app.
+# For example, you might use the camera plugin to access the device's camera.
+# You can find Flutter plugins on pub.dev.
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+# You can include additional metadata about your package.
+# publisher: Example Company
+# homepage: https://example.com
+# repository: https://github.com/example/example
+
+# For details about the format of this file, see the Dart documentation:
+# https://dart.dev/guides/language/effective-dart/documentation
